@@ -10,7 +10,7 @@
       </v-icon>
       <nuxt-link to="/" class="SideNavigation-HeadingLink">
         <div class="SideNavigation-Logo">
-          <img src="/logo.svg" :alt="$t('Kanagawa')" />
+          <img src="/logo.svg" :alt="$t('Prefecture')" />
         </div>
         <h1 class="SideNavigation-Heading">
           {{ $t('COVID-19') }}<br />{{ $t('Measures site') }}
@@ -51,8 +51,7 @@
           </a>
         </div>
         <small class="SideNavigation-Copyright" lang="en">
-          Copyright &copy; 2020 Tokyo Metropolitan Government. All Rights
-          Reserved.
+          Copyright &copy; {{$t('Copyright')}}
         </small>
       </div>
     </div>
@@ -64,11 +63,11 @@
   "ja": {
     "Navi Open": "サイドメニュー項目を開く",
     "Navi Close": "サイドメニュー項目を閉じる",
-    "Kanagawa": "神奈川県",
+    "Prefecture": "神奈川県",
     "COVID-19": "新型コロナウイルス感染症",
     "Measures site": "対策サイト",
-    "Kanagawa Government": "神奈川県",
-    "Tokyo COVID-19 Task Force": "新型コロナウイルス感染症対策本部",
+    "Prefecture Government": "神奈川県",
+    "Local COVID-19 Task Force": "新型コロナウイルス感染症対策本部",
     "The latest updates": "県内の最新感染動向",
     "If you have any symptoms": "新型コロナウイルス感染症が心配なときに",
     "for Families with children": "お子様をお持ちの皆様へ",
@@ -77,8 +76,14 @@
     "Official statements from Task Force": "神奈川県新型コロナウイルス感染症対策本部報",
     "Cancelled public events": "神奈川県主催等 中止又は延期するイベント等",
     "Government official website": "神奈川県公式ホームページ",
-    "Message from Governor Kuroiwa": "知事からのメッセージ",
-    "About us": "当サイトについて"
+    "Message from Governor": "知事からのメッセージ",
+    "About us": "当サイトについて",
+    "Copyright": "2020 Tokyo Metropolitan Government. All Rights Reserved.",
+    "URL Info": "https://www.pref.kanagawa.jp/docs/ga4/bukanshi/bukan_200114.html",
+    "URL BOUSAI": "https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1007261/index.html",
+    "URL Canseled Events": "https://www.pref.kanagawa.jp/docs/ie2/event/2020spring.html",
+    "URL Message from Governor": "https://youtu.be/FYBMDfphBZI",
+    "URL Official Website": "https://www.pref.kanagawa.jp/"
   }
 }
 </i18n>
@@ -119,7 +124,7 @@ export default {
           icon: 'mdi-account-multiple',
           title: this.$t('for Citizens'),
           link:
-            'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/bukan_200114.html'
+            this.$t('URL Info')
         },
         {
           icon: 'mdi-domain',
@@ -130,15 +135,15 @@ export default {
         {
           title: this.$t('Official statements from Task Force'),
           link:
-            'https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1007261/index.html'
+            this.$t('URL BOUSAI')
         },
         {
           title: this.$t('Cancelled public events'),
-          link: 'https://www.pref.kanagawa.jp/docs/ie2/event/2020spring.html'
+          link: this.$t('URL Canseled Events')
         },
         {
-          title: this.$t('Message from Governor Kuroiwa'),
-          link: 'https://youtu.be/FYBMDfphBZI'
+          title: this.$t('Message from Governor'),
+          link: this.$t('URL Message from Governor')
         },
         {
           title: this.$t('About us'),
@@ -146,7 +151,7 @@ export default {
         },
         {
           title: this.$t('Government official website'),
-          link: 'https://www.pref.kanagawa.jp/',
+          link: this.$t('URL Official Website'),
           divider: true
         }
       ]
