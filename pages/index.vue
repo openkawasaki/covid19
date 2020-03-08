@@ -72,6 +72,7 @@
           :url="''"
         />
       </v-col>
+      <!--
       <v-col cols="12" md="6" class="DataCard">
         <metro-bar-chart
           title="都営地下鉄の利用者数の推移"
@@ -80,9 +81,26 @@
           :date="metroGraph.date"
         />
       </v-col>
+      -->
     </v-row>
   </div>
 </template>
+
+
+<i18n>
+{
+  "ja": {
+    "Prefecture Label": "県内の最新感染動向",
+    "Prefecture Domain": "県内",
+    "Region Inside": "県内",
+    "Region Outside": "その他",
+    "Inspection Category 1": "県内発生（疑い例・接触者調査）",
+    "Inspection Category 2": "その他（チャーター便・クルーズ便）"
+  }
+}
+</i18n>
+
+
 
 <script>
 import PageHeader from '@/components/PageHeader.vue'
@@ -114,6 +132,10 @@ export default {
     ConfirmedCasesTable
   },
   data() {
+
+    // 文字列テーブル参照用（i18n）
+    const $t = this.$t.bind(this)
+
     // 感染者数グラフ
     const patientsGraph = formatGraph(Data.patients_summary.data)
     // 感染者数
@@ -134,8 +156,8 @@ export default {
       Data.inspections_summary.data['その他']
     ]
     const inspectionsItems = [
-      '県内発生（疑い例・接触者調査）',
-      'その他（チャーター便・クルーズ便）'
+      $t('Inspection Category 1'),
+      $t('Inspection Category 2')
     ]
     const inspectionsLabels = Data.inspections_summary.labels
     // 死亡者数
@@ -170,7 +192,7 @@ export default {
       sumInfoOfPatients,
       headerItem: {
         icon: 'mdi-chart-timeline-variant',
-        title: '県内の最新感染動向',
+        title: $t('Prefecture Label'),
         date: Data.lastUpdate
       },
       newsItems: News.newsItems,
@@ -278,7 +300,7 @@ export default {
   },
   head() {
     return {
-      title: '県内の最新感染動向'
+      title: this.$t('Prefecture Label')
     }
   }
 }
