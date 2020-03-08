@@ -68,15 +68,17 @@
     "COVID-19": "新型コロナウイルス感染症",
     "Measures site": "対策サイト",
     "Kanagawa Government": "神奈川県",
-    "Tokyo COVID-19 Task Force": "新型コロナウイルス感染症対策本部",
-    "The latest updates": "県内の最新感染動向",
+    "The latest updates": "神奈川県内の最新感染動向",
     "If you have any symptoms": "新型コロナウイルス感染症が心配なときに",
     "for Families with children": "お子様をお持ちの皆様へ",
     "for Citizens": "県民の皆様へ",
+    "about COVID-19": "新型コロナウイルス感染症について",
     "for Enterprises and Employees": "企業の皆様・はたらく皆様へ",
     "Official statements from Task Force": "神奈川県新型コロナウイルス感染症対策本部報",
     "Cancelled public events": "神奈川県主催等 中止又は延期するイベント等",
     "Government official website": "神奈川県公式ホームページ",
+    "Government official line": "神奈川県公式LINEアカウント",
+    "Government official twitter": "神奈川県公式Twitterアカウント",
     "Message from Governor Kuroiwa": "知事からのメッセージ",
     "About us": "当サイトについて"
   }
@@ -106,8 +108,8 @@ export default {
         },
         {
           icon: 'covid',
-          title: this.$t('If you have any symptoms'),
-          link: '/flow',
+          title: this.$t('about COVID-19'),
+          link: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/bukan_200114.html',
           divider: true
         },
         {
@@ -128,26 +130,29 @@ export default {
           divider: true
         },
         {
-          title: this.$t('Official statements from Task Force'),
-          link:
-            'https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1007261/index.html'
-        },
-        {
           title: this.$t('Cancelled public events'),
           link: 'https://www.pref.kanagawa.jp/docs/ie2/event/2020spring.html'
         },
         {
           title: this.$t('Message from Governor Kuroiwa'),
-          link: 'https://youtu.be/FYBMDfphBZI'
+          link: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/bukan_200114.html#chiji'
         },
         {
           title: this.$t('About us'),
-          link: '/about'
+          link: '/about',
+          divider: true
         },
         {
           title: this.$t('Government official website'),
           link: 'https://www.pref.kanagawa.jp/',
-          divider: true
+        },
+        {
+          title: this.$t('Government official line'),
+          link: 'https://lin.ee/BMlBaDg',
+        },
+        {
+          title: this.$t('Government official twitter'),
+          link: 'https://twitter.com/KanagawaPref_PR',
         }
       ]
     }

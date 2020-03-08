@@ -8,11 +8,12 @@
     <whats-new class="mb-4" :items="newsItems" />
     <static-info
       class="mb-4"
-      :url="'/flow'"
+      :url="'https://www.pref.kanagawa.jp/docs/e7a/yobo/korona.html'"
       :text="'自分や家族の症状に不安や心配があればまずは電話相談をどうぞ'"
       :btn-text="'相談の手順を見る'"
     />
     <v-row class="DataBlock">
+      <!--
       <v-col cols="12" md="6" class="DataCard">
         <svg-card title="検査陽性者の状況" :date="headerItem.date">
           <confirmed-cases-table
@@ -21,15 +22,13 @@
           />
         </svg-card>
       </v-col>
+      -->
       <v-col cols="12" md="6" class="DataCard">
         <time-bar-chart
           title="陽性患者数"
           :chart-data="patientsGraph"
           :date="Data.patients.date"
           :unit="'人'"
-          :url="
-            'https://catalog.data.metro.tokyo.lg.jp/dataset/t000010d0000000068'
-          "
         />
       </v-col>
       <v-col cols="12" md="6" class="DataCard">
@@ -39,11 +38,9 @@
           :chart-option="{}"
           :date="Data.patients.date"
           :info="sumInfoOfPatients"
-          :url="
-            'https://catalog.data.metro.tokyo.lg.jp/dataset/t000010d0000000068'
-          "
         />
       </v-col>
+      <!--
       <v-col cols="12" md="6" class="DataCard">
         <time-stacked-bar-chart
           title="検査実施数"
@@ -80,6 +77,7 @@
           :date="metroGraph.date"
         />
       </v-col>
+      -->
     </v-row>
   </div>
 </template>
@@ -170,7 +168,7 @@ export default {
       sumInfoOfPatients,
       headerItem: {
         icon: 'mdi-chart-timeline-variant',
-        title: '県内の最新感染動向',
+        title: '神奈川県内の最新感染動向',
         date: Data.lastUpdate
       },
       newsItems: News.newsItems,
@@ -278,7 +276,7 @@ export default {
   },
   head() {
     return {
-      title: '県内の最新感染動向'
+      title: '神奈川県内の最新感染動向'
     }
   }
 }
