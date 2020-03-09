@@ -4,8 +4,15 @@
 
 <img src="static/ogp.png" width="400">
 
-## Goal
-[東京都 新型コロナウイルス感染症対策サイト](https://stopcovid19.metro.tokyo.lg.jp/)の神奈川版です。
+## ライセンス
+[東京都 新型コロナウイルス感染症対策サイト](https://stopcovid19.metro.tokyo.lg.jp/)の神奈川版です。  
+[ソースコードはこちら](https://github.com/tokyo-metropolitan-gov/covid19/)
+
+```
+Copyright 2020 Tokyo Metropolitan Government
+Released under the MIT license
+https://github.com/tokyo-metropolitan-gov/covid19/blob/master/LICENSE.txt
+```
 
 ## How to Contribute / 貢献の仕方
 [Kanagawa Issues](https://github.com/openkawasaki/covid19/issues) にあるいろいろな修正にご協力いただけると嬉しいです。

@@ -46,13 +46,16 @@
           >
             <img src="/icon.png" alt="Twitter" />
           </a>
-          <a href="https://www.facebook.com/openkawasaki/" target="_blank" rel="noopener">
-            <img src="/facebook.png" alt="LINE" />
+          <a
+            href="https://www.facebook.com/openkawasaki/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="/facebook.png" alt="Facebook" />
           </a>
         </div>
         <small class="SideNavigation-Copyright" lang="en">
-          Copyright &copy; 2020 Open Kawasaki / Code for KAWASAKI. All Rights
-          Reserved.
+          Powered by Open Kawasaki / Code for Kawasaki
         </small>
       </div>
     </div>
@@ -109,7 +112,8 @@ export default {
         {
           icon: 'covid',
           title: this.$t('about COVID-19'),
-          link: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/bukan_200114.html',
+          link:
+            'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/bukan_200114.html',
           divider: true
         },
         {
@@ -135,15 +139,16 @@ export default {
         },
         {
           title: this.$t('Message from Governor Kuroiwa'),
-          link: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/bukan_200114.html#chiji'
+          link:
+            'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/bukan_200114.html#chiji'
         },
         {
           title: this.$t('Government official website'),
-          link: 'https://www.pref.kanagawa.jp/',
+          link: 'https://www.pref.kanagawa.jp/'
         },
         {
           title: this.$t('Government official line'),
-          link: 'https://lin.ee/BMlBaDg',
+          link: 'https://lin.ee/BMlBaDg'
         },
         {
           title: this.$t('Government official twitter'),
@@ -152,7 +157,7 @@ export default {
         },
         {
           title: this.$t('About us'),
-          link: '/about',
+          link: '/about'
         }
       ]
     }
