@@ -1,17 +1,22 @@
-# 東京都 新型コロナウイルス感染症対策サイト
+# 神奈川県版 新型コロナウイルス感染症対策サイト
 
 ![](https://github.com/tokyo-metropolitan-gov/covid19/workflows/production%20deploy/badge.svg)
 
-![東京都 新型コロナウイルス感染症対策サイト](https://user-images.githubusercontent.com/1301149/75629392-1d19d900-5c25-11ea-843d-2d4376e3a560.png)
+<img src="static/ogp.png" width="400">
 
+## Goal
+[東京都 新型コロナウイルス感染症対策サイト](https://stopcovid19.metro.tokyo.lg.jp/)の神奈川版です。
 
 ## How to Contribute / 貢献の仕方
-Issues にあるいろいろな修正にご協力いただけると嬉しいです。
+[Kanagawa Issues](https://github.com/openkawasaki/covid19/issues) にあるいろいろな修正にご協力いただけると嬉しいです。
 
-詳しくは[How to contribute](https://github.com/tokyo-metropolitan-gov/covid19/wiki/How-to-contribute)を御覧ください。
+オープン川崎のSlackの#prj_covid19チャンネルでも情報共有を行っています。加入は[こちらからどうぞ](https://join.slack.com/t/openkawasaki/shared_invite/zt-4hbuav6c-Ttza18ObLreA6JZ6mvcyIw)
+
+
+その他の詳しい情報は[How to contribute(東京版)](https://github.com/tokyo-metropolitan-gov/covid19/blob/development/.github/CONTRIBUTING.md)を御覧ください。
 
 All contributions are welcome!
-Please check [How to contribute](https://github.com/tokyo-metropolitan-gov/covid19/wiki/How-to-contribute%5BEnglish%5D) for details.
+Please check [How to contribute](https://github.com/tokyo-metropolitan-gov/covid19/wiki/How-to-contribute) for details.
 
 ## License / ライセンス
 本ソフトウェアは、MITライセンスの元提供されています。 
@@ -21,7 +26,7 @@ This software is released under the MIT License.
 
 ### How to Set Up Environments / 環境構築の手順
 
-**Use yarn / yarn を使う場合**
+#### Use yarn / yarn を使う場合**
 ``` bash
 # install dependencies
 $ yarn install
@@ -30,29 +35,40 @@ $ yarn install
 $ yarn dev
 ```
 
-**Use docker / docker compose を使う場合**
-```bash
-# Please run after checkout this repository
-$ docker-compose build
-$ docker-compose run --rm app yarn install
+#### Use docker / docker compose を使う場合
+```bash 
 # serve with hot reload at localhost:3000
 $ docker-compose up
 ```
 
+* `docker-compose up` 初回実行時に下記のエラーが出た場合
+
+```
+yarn run v1.21.1
+$ cross-env NODE_ENV=development nuxt-ts
+covid19 | /bin/sh: cross-env: not found
+error Command failed with exit code 127.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+covid19 exited with code 127
+```
+
+なんらかの理由で`yarn install`が失敗していると考えられるので、下記を実行後、再度 `docker-compose up` してみてください。
+
+```bash
+$ docker-compose exec app sh
+/app # yarn install
+/app # exit
+```
+
+#### Use npm / npm を使う場合
+``` bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+```
+
 ### Deployment to Staging & Production Environments / ステージング・本番環境への反映
 
-`master` ブランチがアップデートされると、自動的に `production` ブランチにHTML類がbuildされます。そして、本番サイト https://stopcovid19.metro.tokyo.lg.jp/ が更新されます。
-
-`staging` ブランチがアップデートされると、自動的に `gh-pages` ブランチにHTML類がbuildされます。そして、ステージングサイト https://stg-covid19-tokyo.netlify.com/ が更新されます。
-
-`development` ブランチがアップデートされると、自動的に `dev-pages` ブランチにHTML類がbuildされます。そして、開発用サイト https://dev-covid19-tokyo.netlify.com/ が更新されます。
-
-
-When `master` branch is updated, the HTML files will be automatically built onto `production` branch,
-and then the production site (https://stopcovid19.metro.tokyo.lg.jp/) will be also updated.
-
-When `staging` branch is updated, the HTML files will be automatically built onto `gh-pages` branch,
-and then the staging site (https://stg-covid19-tokyo.netlify.com/) will be also updated.
-
-When `development` branch is updated, the HTML files will be automatically built onto `dev-pages` branch,
-and then the development site (https://dev-covid19-tokyo.netlify.com/) will be also updated.
+**TBD**
