@@ -20,6 +20,7 @@
           mdi-open-in-new
         </v-icon>
       </a>
+      <a class="DataView-Link" target="_blank" :href="sourceLink">出典: {{ sourceFrom }} <v-icon size="15">mdi-open-in-new</v-icon></a>
     </v-footer>
   </v-card>
 </template>
@@ -32,7 +33,9 @@ export default class DataView extends Vue {
   @Prop() private title!: string
   @Prop() private date!: string
   @Prop() private url!: string
-  @Prop() private info!: any // FIXME expect info as {lText:string, sText:string unit:string}
+  @Prop() private info!: any
+  @Prop() private sourceFrom!: string
+  @Prop() private sourceLink!: string // FIXME expect info as {lText:string, sText:string unit:string}
 }
 </script>
 

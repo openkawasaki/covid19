@@ -28,6 +28,8 @@
           title="陽性患者数(県内事例)"
           :chart-data="patientsGraph"
           :date="Data.patients.date"
+          sourceFrom="神奈川県webサイト"
+          sourceLink="https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html"
           :unit="'人'"
         />
       </v-col>
@@ -38,6 +40,8 @@
           :chart-option="{}"
           :date="Data.patients.date"
           :info="sumInfoOfPatients"
+          sourceFrom="神奈川県webサイト"
+          sourceLink="https://www.pref.kanagawa.jp/docs/ga4/bukanshi/occurrence.html"
         />
       </v-col>
       <!--
