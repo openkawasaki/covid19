@@ -29,7 +29,7 @@ const config = {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://covid19-kanagawa.netlify.com/'
+        content: 'https://stopcovid19.kanagawa.work/'
       },
       {
         hid: 'og:title',
@@ -44,7 +44,7 @@ const config = {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://covid19-kanagawa.netlify.com/ogp.png'
+        content: 'https://stopcovid19.kanagawa.work/ogp.png'
       }
     ],
     link: [

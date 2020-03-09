@@ -53,7 +53,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: `https://covid19-kanagawa.netlify.com${this.$route.path}`
+          href: `https://stopcovid19.kanagawa.work${this.$route.path}`
         }
       ]
     }
