@@ -39,19 +39,19 @@
       </v-list>
       <div class="SideNavigation-Footer">
         <div class="SideNavigation-SocialLinkContainer">
-          <a href="https://lin.ee/BMlBaDg" target="_blank" rel="noopener">
-            <img src="/line.png" alt="LINE" />
-          </a>
           <a
-            href="https://twitter.com/tokyo_bousai"
+            href="https://www.openkawasaki.org/"
             target="_blank"
             rel="noopener"
           >
-            <img src="/twitter.png" alt="Twitter" />
+            <img src="/icon.png" alt="Twitter" />
+          </a>
+          <a href="https://www.facebook.com/openkawasaki/" target="_blank" rel="noopener">
+            <img src="/facebook.png" alt="LINE" />
           </a>
         </div>
         <small class="SideNavigation-Copyright" lang="en">
-          Copyright &copy; 2020 Tokyo Metropolitan Government. All Rights
+          Copyright &copy; 2020 Open Kawasaki / Code for KAWASAKI. All Rights
           Reserved.
         </small>
       </div>
@@ -66,7 +66,7 @@
     "Navi Close": "サイドメニュー項目を閉じる",
     "Kanagawa": "神奈川県",
     "COVID-19": "新型コロナウイルス感染症",
-    "Measures site": "対策サイト",
+    "Measures site": "神奈川県 対策サイト",
     "Kanagawa Government": "神奈川県",
     "The latest updates": "神奈川県内の最新感染動向",
     "If you have any symptoms": "新型コロナウイルス感染症が心配なときに",
@@ -138,11 +138,6 @@ export default {
           link: 'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/bukan_200114.html#chiji'
         },
         {
-          title: this.$t('About us'),
-          link: '/about',
-          divider: true
-        },
-        {
           title: this.$t('Government official website'),
           link: 'https://www.pref.kanagawa.jp/',
         },
@@ -153,6 +148,11 @@ export default {
         {
           title: this.$t('Government official twitter'),
           link: 'https://twitter.com/KanagawaPref_PR',
+          divider: true
+        },
+        {
+          title: this.$t('About us'),
+          link: '/about',
         }
       ]
     }
