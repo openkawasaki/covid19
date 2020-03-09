@@ -25,7 +25,7 @@
       -->
       <v-col cols="12" md="6" class="DataCard">
         <time-bar-chart
-          title="陽性患者数"
+          title="陽性患者数(県内事例)"
           :chart-data="patientsGraph"
           :date="Data.patients.date"
           :unit="'人'"
@@ -33,7 +33,7 @@
       </v-col>
       <v-col cols="12" md="6" class="DataCard">
         <data-table
-          :title="'陽性患者の属性'"
+          :title="'陽性患者の属性(県内事例)'"
           :chart-data="patientsTable"
           :chart-option="{}"
           :date="Data.patients.date"
