@@ -121,7 +121,7 @@ const config = {
     theme: {}
   },
   googleAnalytics: {
-    id: 'UA-159417676-1'
+    id: 'UA-160055034-1'
   },
   // /*
   // ** Build configuration
