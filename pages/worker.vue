@@ -20,7 +20,7 @@ export default {
         {
           title: '中小企業経営相談窓口',
           body:
-            '<a href="https://www.pref.kanagawa.jp/docs/m6c/cnt/f5782/200205corona.html" target="_blank" rel="noopener">https://www.pref.kanagawa.jp/docs/m6c/cnt/f5782/200205corona.html</a> <br />新型コロナウイルスの流行により影響を受ける県内中小企業に対する「経営相談窓口」を設置します（神奈川県産業労働局）'
+            '<a href="https://www.pref.kanagawa.jp/docs/jf2/korona.html" target="_blank" rel="noopener">https://www.pref.kanagawa.jp/docs/jf2/korona.html</a> <br />新型コロナウイルスの流行により影響を受ける県内中小企業に対する「経営相談窓口」を設置します（神奈川県産業労働局）'
         },
         {
           title: '中小企業向け金融支援',
@@ -35,7 +35,7 @@ export default {
         {
           title: '旅館業営業者・住宅宿泊事業者・管理業者の皆様へ',
           body:
-            '<a href="https://www.pref.kanagawa.jp/docs/ya3/senryaku/korona-kankoujigyousha-sien.html" target="_blank" rel="noopener">https://www.pref.kanagawa.jp/docs/ya3/senryaku/korona-kankoujigyousha-sien.html</a><br />新型コロナウイルスに関連した宿泊施設の対応について（神奈川県健康医療局）'
+            '<a href="https://www.pref.kanagawa.jp/docs/e8z/coronavirs_syukuhaku.html" target="_blank" rel="noopener">https://www.pref.kanagawa.jp/docs/e8z/coronavirs_syukuhaku.html</a><br />新型コロナウイルスに関連した宿泊施設の対応について（神奈川県健康医療局）'
         }
       ]
     }
