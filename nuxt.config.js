@@ -11,40 +11,40 @@ const config = {
     htmlAttrs: {
       prefix: 'og: http://ogp.me/ns#'
     },
-    titleTemplate: '%s | 東京都 新型コロナウイルス感染症対策サイト',
+    titleTemplate: '%s | 神奈川県 新型コロナウイルス感染症対策サイト',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: '当サイトは新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するために、東京都が開設したものです。'
+        content: '当サイトは新型コロナウイルス感染症（COVID-19）に関する神奈川県の情報を提供するために、オープン川崎/Code for KAWASAKIが開設したものです。'
       },
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: '東京都 新型コロナウイルス感染症対策サイト'
+        content: '神奈川県 新型コロナウイルス感染症対策サイト'
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://stopcovid19.metro.tokyo.lg.jp'
+        content: 'https://stopcovid19.kanagawa.work/'
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: '東京都 新型コロナウイルス感染症対策サイト'
+        content: '神奈川県 新型コロナウイルス感染症対策サイト'
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: '当サイトは新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するために、東京都が開設したものです。'
+        content: '当サイトは新型コロナウイルス感染症（COVID-19）に関する神奈川県の情報を提供するために、オープン川崎/Code for KAWASAKIが開設したものです。'
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://stopcovid19.metro.tokyo.lg.jp/ogp.png'
+        content: 'https://stopcovid19.kanagawa.work/ogp.png'
       }
     ],
     link: [
@@ -121,7 +121,7 @@ const config = {
     theme: {}
   },
   googleAnalytics: {
-    id: 'UA-159417676-1'
+    id: 'UA-160055034-1'
   },
   // /*
   // ** Build configuration
@@ -145,8 +145,8 @@ const config = {
     }
   },
   manifest: {
-    "name": "東京都 新型コロナウイルス感染症対策サイト",
-    "theme_color": "#00a040",
+    "name": "神奈川県 新型コロナウイルス感染症対策サイト",
+    "theme_color": "#277FC6",
     "background_color": "#ffffff",
     "display": "standalone",
     "Scope": "/",

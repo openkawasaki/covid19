@@ -1,5 +1,5 @@
 <template>
-  <data-view :title="title" :date="date" :url="url">
+  <data-view :title="title" :date="date" :url="url" :source-from="sourceFrom" :source-link="sourceLink">
     <template v-slot:button>
       <data-selector v-model="dataKind" />
     </template>
@@ -45,6 +45,16 @@ export default {
       default: ''
     },
     url: {
+      type: String,
+      required: false,
+      default: ''
+    },
+    sourceFrom: {
+      type: String,
+      required: false,
+      default: ''
+    },
+    sourceLink: {
       type: String,
       required: false,
       default: ''
@@ -96,7 +106,7 @@ export default {
               data: this.chartData.map(d => {
                 return d.transition
               }),
-              backgroundColor: '#00B849',
+              backgroundColor: '#58A2DE',
               borderWidth: 0
             }
           ]
@@ -112,7 +122,7 @@ export default {
             data: this.chartData.map(d => {
               return d.cumulative
             }),
-            backgroundColor: '#00B849',
+            backgroundColor: '#58A2DE',
             borderWidth: 0
           }
         ]

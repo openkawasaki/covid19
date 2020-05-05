@@ -10,7 +10,7 @@
       </v-icon>
       <nuxt-link to="/" class="SideNavigation-HeadingLink">
         <div class="SideNavigation-Logo">
-          <img src="/logo.svg" :alt="$t('Tokyo')" />
+          <img src="/logo.svg" :alt="$t('Kanagawa')" />
         </div>
         <h1 class="SideNavigation-Heading">
           {{ $t('COVID-19') }}<br />{{ $t('Measures site') }}
@@ -40,23 +40,22 @@
       <div class="SideNavigation-Footer">
         <div class="SideNavigation-SocialLinkContainer">
           <a
-            href="https://line.me/R/ti/p/%40822sysfc"
+            href="https://www.openkawasaki.org/"
             target="_blank"
             rel="noopener"
           >
-            <img src="/line.png" alt="LINE" />
+            <img src="/icon.png" alt="Twitter" />
           </a>
           <a
-            href="https://twitter.com/tokyo_bousai"
+            href="https://www.facebook.com/openkawasaki/"
             target="_blank"
             rel="noopener"
           >
-            <img src="/twitter.png" alt="Twitter" />
+            <img src="/facebook.png" alt="Facebook" />
           </a>
         </div>
         <small class="SideNavigation-Copyright" lang="en">
-          Copyright &copy; 2020 Tokyo Metropolitan Government. All Rights
-          Reserved.
+          Powered by Open Kawasaki / Code for Kawasaki
         </small>
       </div>
     </div>
@@ -68,20 +67,22 @@
   "ja": {
     "Navi Open": "サイドメニュー項目を開く",
     "Navi Close": "サイドメニュー項目を閉じる",
-    "Tokyo": "東京都",
+    "Kanagawa": "神奈川県",
     "COVID-19": "新型コロナウイルス感染症",
-    "Measures site": "対策サイト",
-    "Tokyo Metropolitan Government": "東京都",
-    "Tokyo COVID-19 Task Force": "新型コロナウイルス感染症対策本部",
-    "The latest updates": "都内の最新感染動向",
+    "Measures site": "神奈川県 対策サイト",
+    "Kanagawa Government": "神奈川県",
+    "The latest updates": "神奈川県内の最新感染動向",
     "If you have any symptoms": "新型コロナウイルス感染症が心配なときに",
     "for Families with children": "お子様をお持ちの皆様へ",
-    "for Citizens": "都民の皆様へ",
+    "for Citizens": "県民の皆様へ",
+    "about COVID-19": "新型コロナウイルス感染症について",
     "for Enterprises and Employees": "企業の皆様・はたらく皆様へ",
-    "Official statements from Task Force": "東京都新型コロナウイルス感染症対策本部報",
-    "Cancelled public events": "東京都主催等 中止又は延期するイベント等",
-    "Government official website": "東京都公式ホームページ",
-    "Message from Governor Koike": "知事からのメッセージ",
+    "Official statements from Task Force": "神奈川県新型コロナウイルス感染症対策本部報",
+    "Cancelled public events": "神奈川県主催等 中止又は延期するイベント等",
+    "Government official website": "神奈川県公式ホームページ",
+    "Government official line": "神奈川県公式LINEアカウント",
+    "Government official twitter": "神奈川県公式Twitterアカウント",
+    "Message from Governor Kuroiwa": "知事からのメッセージ",
     "About us": "当サイトについて"
   }
 }
@@ -110,8 +111,9 @@ export default {
         },
         {
           icon: 'covid',
-          title: this.$t('If you have any symptoms'),
-          link: '/flow',
+          title: this.$t('about COVID-19'),
+          link:
+            'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/bukan_200114.html',
           divider: true
         },
         {
@@ -122,7 +124,8 @@ export default {
         {
           icon: 'mdi-account-multiple',
           title: this.$t('for Citizens'),
-          link: 'https://www.metro.tokyo.lg.jp/tosei/tosei/news/2019-ncov.html'
+          link:
+            'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/bukan_200114.html'
         },
         {
           icon: 'mdi-domain',
@@ -131,28 +134,30 @@ export default {
           divider: true
         },
         {
-          title: this.$t('Official statements from Task Force'),
-          link:
-            'https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1007261/index.html'
-        },
-        {
           title: this.$t('Cancelled public events'),
-          link:
-            'https://www.seisakukikaku.metro.tokyo.lg.jp/information/event02.html'
+          link: 'https://www.pref.kanagawa.jp/docs/ie2/event/2020spring.html'
         },
         {
-          title: this.$t('Message from Governor Koike'),
+          title: this.$t('Message from Governor Kuroiwa'),
           link:
-            'https://www.metro.tokyo.lg.jp/tosei/governor/governor/katsudo/2020/03/03_00.html'
+            'https://www.pref.kanagawa.jp/docs/ga4/bukanshi/bukan_200114.html#chiji'
+        },
+        {
+          title: this.$t('Government official website'),
+          link: 'https://www.pref.kanagawa.jp/'
+        },
+        {
+          title: this.$t('Government official line'),
+          link: 'https://lin.ee/BMlBaDg'
+        },
+        {
+          title: this.$t('Government official twitter'),
+          link: 'https://twitter.com/KanagawaPref_PR',
+          divider: true
         },
         {
           title: this.$t('About us'),
           link: '/about'
-        },
-        {
-          title: this.$t('Government official website'),
-          link: 'https://www.metro.tokyo.lg.jp/',
-          divider: true
         }
       ]
     }

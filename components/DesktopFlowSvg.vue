@@ -90,7 +90,7 @@
         .j,
         .o,
         .v {
-          fill: #00a040;
+          fill: #277FC6;
         }
 
         .k,
@@ -153,7 +153,7 @@
 
         .ab,
         .x {
-          stroke: #00a040;
+          stroke: #277FC6;
         }
 
         .ak,
@@ -815,7 +815,7 @@
         </text>
         <g transform="translate(-101 1091)">
           <text class="b" transform="translate(238 106)">
-            <tspan x="-77" y="0">東京都健康安全</tspan>
+            <tspan x="-77" y="0">神奈川県健康安全</tspan>
             <tspan x="-77" y="25">研究センター等</tspan>
           </text>
         </g>
